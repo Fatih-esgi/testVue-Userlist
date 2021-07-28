@@ -6,11 +6,15 @@ class UserDataService {
     return http.get("/users");
   }
 
-  add(id: any): Promise<any> {
-    return http.post(`/posts/${id}`);
+  add(array: any): Promise<any> {
+    console.log(array);
+    return http.post(`/posts`, array);
+    
   }
   delete(id: any): Promise<any> {
+    console.log(id);
     return http.delete(`/users/${id}`);
+    
   }
 
 }

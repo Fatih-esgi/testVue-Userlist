@@ -1,5 +1,6 @@
 export default interface UserType {
-    id: null;
-    firstName: string;
-    lastName: string;
+    id: any;
+    name: string;
+    username: string;
+    email:string; 
   }
